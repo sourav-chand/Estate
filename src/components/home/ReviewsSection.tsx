@@ -7,7 +7,7 @@ export function ReviewsSection() {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-16 md:py-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="text-center mb-12">
           <p className="font-sans text-xs uppercase tracking-[0.3em] text-gold mb-3">Testimonials</p>

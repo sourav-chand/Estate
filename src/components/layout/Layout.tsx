@@ -8,7 +8,7 @@ import { SearchOverlay } from '../common/SearchOverlay';
 
 export function Layout() {
   return (
-    <div className="min-h-screen flex flex-col bg-ivory">
+    <div className="min-h-screen flex flex-col bg-ivory overflow-x-hidden">
       <AnnouncementBar />
       <Header />
       <MobileMenu />
