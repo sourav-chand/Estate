@@ -1,0 +1,58 @@
+import { Collection } from '../types';
+
+export const collections: Collection[] = [
+  {
+    id: 'col1',
+    name: 'Rose Gold',
+    slug: 'rose-gold',
+    description: 'Elegant rose gold plated jewellery that adds warmth and femininity to every look. From delicate chains to bold statement pieces.',
+    image: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&h=600&fit=crop',
+    bannerImage: 'https://images.unsplash.com/photo-1515562141589-67f0d727b750?w=1200&h=500&fit=crop',
+    productCount: 7,
+  },
+  {
+    id: 'col2',
+    name: 'Crystal Blooms',
+    slug: 'crystal-blooms',
+    description: 'Sparkling crystal and CZ jewellery inspired by nature\'s most beautiful blooms. Each piece is designed to catch the light.',
+    image: 'https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=600&h=600&fit=crop',
+    bannerImage: 'https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?w=1200&h=500&fit=crop',
+    productCount: 8,
+  },
+  {
+    id: 'col3',
+    name: 'Hasli Collection',
+    slug: 'hasli-collection',
+    description: 'Contemporary everyday jewellery designed for the modern Indian woman. Minimalist designs that blend tradition with trend.',
+    image: 'https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?w=600&h=600&fit=crop',
+    bannerImage: 'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=1200&h=500&fit=crop',
+    productCount: 10,
+  },
+  {
+    id: 'col4',
+    name: 'Wedding Season',
+    slug: 'wedding-season',
+    description: 'Grand bridal and wedding jewellery that makes every ceremony unforgettable. From kundan sets to polki chokers.',
+    image: 'https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?w=600&h=600&fit=crop',
+    bannerImage: 'https://images.unsplash.com/photo-1515562141589-67f0d727b750?w=1200&h=500&fit=crop',
+    productCount: 9,
+  },
+  {
+    id: 'col5',
+    name: 'Everyday Elegance',
+    slug: 'everyday-elegance',
+    description: 'Subtle yet stunning jewellery for daily wear. Lightweight, durable designs that complement your everyday style.',
+    image: 'https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=600&h=600&fit=crop',
+    bannerImage: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=1200&h=500&fit=crop',
+    productCount: 10,
+  },
+  {
+    id: 'col6',
+    name: 'Morbagh Collection',
+    slug: 'morbagh-collection',
+    description: 'Inspired by the vibrant hues of Indian gardens. Handcrafted oxidized and meenakari jewellery bursting with colour.',
+    image: 'https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=600&h=600&fit=crop',
+    bannerImage: 'https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?w=1200&h=500&fit=crop',
+    productCount: 7,
+  },
+];

@@ -1,0 +1,68 @@
+import { Review } from '../types';
+
+export const reviews: Review[] = [
+  {
+    id: 'rev1',
+    customerName: 'Priya Sharma',
+    rating: 5,
+    comment: 'Absolutely love my Chandbali Pearl Drop Earrings! The quality is amazing and they look so elegant. I wore them to my cousin\'s wedding and received so many compliments. The pearl drops sway beautifully.',
+    product: 'Chandbali Pearl Drop Earrings',
+    date: '2026-07-15',
+  },
+  {
+    id: 'rev2',
+    customerName: 'Ananya Reddy',
+    rating: 5,
+    comment: 'The Rose Gold CZ Necklace Set exceeded my expectations. The CZ stones sparkle like real diamonds and the rose gold finish is so luxurious. Perfect for my engagement ceremony. The matching earrings are a lovely bonus!',
+    product: 'Rose Gold CZ Necklace Set',
+    date: '2026-07-22',
+  },
+  {
+    id: 'rev3',
+    customerName: 'Meera Joshi',
+    rating: 5,
+    comment: 'Ordered the Temple Gold Jhumka Earrings for daily wear and they are perfect! Lightweight, comfortable, and the antique gold finish goes with everything. I wear them to office every day.',
+    product: 'Temple Gold Jhumka Earrings',
+    date: '2026-06-30',
+  },
+  {
+    id: 'rev4',
+    customerName: 'Kavya Iyer',
+    rating: 5,
+    comment: 'The Kundan Bridal Necklace Set is a masterpiece! The uncut diamonds and meenakari work are stunning. It made my wedding day even more special. The packaging was also very premium.',
+    product: 'Kundan Bridal Necklace Set',
+    date: '2026-08-01',
+  },
+  {
+    id: 'rev5',
+    customerName: 'Neha Gupta',
+    rating: 5,
+    comment: 'I bought the Silver Oxidized Jhumka for a college festival and they are my new favourite! Super lightweight, great quality oxidized finish, and the ghungroo sound is so musical. Highly recommended!',
+    product: 'Silver Oxidized Jhumka',
+    date: '2026-07-10',
+  },
+  {
+    id: 'rev6',
+    customerName: 'Deepika Nair',
+    rating: 5,
+    comment: 'The Gold Plated Mangalsutra is exactly what I was looking for. Modern design yet traditional enough for daily wear. The black beads and gold pendants complement each other perfectly. My husband gifted it to me on our anniversary.',
+    product: 'Gold Plated Mangalsutra',
+    date: '2026-07-28',
+  },
+  {
+    id: 'rev7',
+    customerName: 'Ritu Singhania',
+    rating: 5,
+    comment: 'Bought the Pearl String Necklace Set for my mother\'s birthday and she was overjoyed! The pearls have a beautiful luster and the set looks much more expensive than it is. The earrings that come with it are equally gorgeous.',
+    product: 'Pearl String Necklace Set',
+    date: '2026-08-05',
+  },
+  {
+    id: 'rev8',
+    customerName: 'Aditi Bose',
+    rating: 5,
+    comment: 'The Diamond Tennis Bracelet is stunning! It catches light beautifully and feels premium on my wrist. The adjustable clasp makes it easy to put on and take off. I\'ve been wearing it every day since it arrived.',
+    product: 'Diamond Tennis Bracelet',
+    date: '2026-07-20',
+  },
+];
