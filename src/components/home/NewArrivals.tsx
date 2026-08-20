@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { productService } from '../../services/productService';
 import type { Product } from '../../types';
@@ -49,7 +49,7 @@ function ProductCard({ product }: { product: Product }) {
   );
 }
 
-export default function NewArrivals() {
+export function NewArrivals() {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
 

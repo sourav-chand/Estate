@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import { categories } from '../../data/categories';
 
 const containerVariants = {
@@ -14,7 +14,7 @@ const itemVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
 };
 
-export default function CategoryGrid() {
+export function CategoryGrid() {
   return (
     <section className="px-6 py-16 md:px-12 md:py-24">
       <h2 className="mb-12 text-center font-serif text-3xl tracking-wide text-charcoal md:text-4xl">

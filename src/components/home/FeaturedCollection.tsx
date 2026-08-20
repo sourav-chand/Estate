@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
-export default function FeaturedCollection() {
+export function FeaturedCollection() {
   return (
     <section className="relative w-full overflow-hidden py-24 md:py-32">
       <div

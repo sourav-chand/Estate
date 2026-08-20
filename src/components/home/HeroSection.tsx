@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
-export default function HeroSection() {
+export function HeroSection() {
   return (
     <section className="relative min-h-[70vh] md:min-h-[90vh] w-full overflow-hidden">
       <div
