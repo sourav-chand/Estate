@@ -102,7 +102,7 @@ export function ProductPage() {
 
   if (loading) {
     return (
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-12">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-5">
           <div className="aspect-square animate-pulse rounded-md bg-champagne/50 lg:col-span-3" />
           <div className="flex flex-col gap-4 lg:col-span-2">
@@ -147,7 +147,7 @@ export function ProductPage() {
 
   return (
     <div className="min-h-screen bg-ivory">
-      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-8">
         <nav className="mb-6 font-sans text-xs tracking-wider text-charcoal-muted">
           <Link to="/" className="hover:text-gold">Home</Link>
           <span className="mx-2">/</span>

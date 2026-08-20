@@ -339,7 +339,7 @@ export function ShopPage() {
 
   return (
     <div className="min-h-screen bg-ivory">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-12">
         <div className="mb-8 text-center">
           <h1 className="font-serif text-4xl font-semibold tracking-wide text-charcoal">JEWELLERY</h1>
           <p className="mt-2 font-sans text-charcoal-muted">Explore our collection of timeless pieces.</p>
@@ -397,7 +397,7 @@ export function ShopPage() {
 
           <div className="flex-1">
             <div className="mb-6 hidden items-center justify-end lg:flex">
-              <div className="flex items-center gap-2">
+              <div className="relative flex items-center gap-2">
                 <span className="font-sans text-xs tracking-wider text-charcoal-muted">SORT BY</span>
                 <div className="relative">
                   <select

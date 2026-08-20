@@ -12,7 +12,7 @@ const trustItems = [
 const containerVariants = {
   hidden: {},
   visible: {
-    transition: { staggerChildren: 0.1 },
+    transition: { staggerChildren: 0.08 },
   },
 };
 
@@ -27,26 +27,30 @@ const itemVariants = {
 
 export function TrustSection() {
   return (
-    <section className="border-t border-b border-sand/60">
+    <section className="border-y border-sand/40">
       <motion.div
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: '-40px' }}
-        className="max-w-[1400px] mx-auto py-10 md:py-14 px-4 md:px-8 lg:px-16 grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-4"
+        className="max-w-7xl mx-auto py-10 md:py-12 px-6 lg:px-10"
       >
-        {trustItems.map((item) => (
-          <motion.div
-            key={item.label}
-            variants={itemVariants}
-            className="flex flex-col items-center text-center gap-3"
-          >
-            <item.icon className="w-6 h-6 text-gold" strokeWidth={1.5} />
-            <span className="font-sans text-sm font-medium text-charcoal">
-              {item.label}
-            </span>
-          </motion.div>
-        ))}
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-0">
+          {trustItems.map((item, i) => (
+            <motion.div
+              key={item.label}
+              variants={itemVariants}
+              className={`flex flex-col items-center text-center gap-2.5 ${
+                i < trustItems.length - 1 ? 'md:border-r md:border-sand/30' : ''
+              }`}
+            >
+              <item.icon className="w-5 h-5 text-gold" strokeWidth={1.5} />
+              <span className="font-sans text-xs font-medium text-charcoal tracking-wide">
+                {item.label}
+              </span>
+            </motion.div>
+          ))}
+        </div>
       </motion.div>
     </section>
   );

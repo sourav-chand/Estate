@@ -25,7 +25,7 @@ export function CartPage() {
   if (items.length === 0) {
     return (
       <div className="min-h-screen bg-ivory">
-        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 py-12">
           <h1 className="mb-8 text-center font-serif text-4xl font-semibold tracking-wide text-charcoal">
             SHOPPING BAG
           </h1>
@@ -55,7 +55,7 @@ export function CartPage() {
 
   return (
     <div className="min-h-screen bg-ivory">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-12">
         <h1 className="mb-2 text-center font-serif text-4xl font-semibold tracking-wide text-charcoal">
           SHOPPING BAG
         </h1>

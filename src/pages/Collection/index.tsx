@@ -108,7 +108,7 @@ export function CollectionPage() {
     return (
       <div className="min-h-screen bg-ivory">
         <div className="h-[400px] animate-pulse bg-champagne/30" />
-        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 py-12">
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
             {Array.from({ length: 8 }).map((_, i) => (
               <div key={i} className="flex flex-col gap-3">
@@ -168,7 +168,7 @@ export function CollectionPage() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-8">
         <div className="mb-4 flex items-center justify-between">
           <p className="font-sans text-xs tracking-wider text-charcoal-muted">
             {filteredProducts.length} product{filteredProducts.length !== 1 ? 's' : ''}
@@ -283,7 +283,7 @@ export function CollectionPage() {
 
           <div className="flex-1">
             <div className="mb-6 hidden items-center justify-end lg:flex">
-              <div className="flex items-center gap-2">
+              <div className="relative flex items-center gap-2">
                 <span className="font-sans text-xs tracking-wider text-charcoal-muted">SORT BY</span>
                 <div className="relative">
                   <select
@@ -331,6 +331,49 @@ export function CollectionPage() {
               <p className="mb-4 font-sans text-xs tracking-wider text-charcoal-muted">
                 {filteredProducts.length} product{filteredProducts.length !== 1 ? 's' : ''}
               </p>
+
+              <div className="border-b border-cream py-4">
+                <span className="mb-3 block font-sans text-xs font-semibold tracking-widest uppercase text-charcoal">Category</span>
+                {CATEGORIES.map(option => (
+                  <label key={option} className="flex cursor-pointer items-center gap-2 py-1">
+                    <input
+                      type="checkbox"
+                      checked={categories.includes(option)}
+                      onChange={() => setCategories(categories.includes(option) ? categories.filter(c => c !== option) : [...categories, option])}
+                      className="h-4 w-4 rounded border-beige accent-gold"
+                    />
+                    <span className="font-sans text-sm text-charcoal-muted">{option}</span>
+                  </label>
+                ))}
+              </div>
+
+              <div className="border-b border-cream py-4">
+                <span className="mb-3 block font-sans text-xs font-semibold tracking-widest uppercase text-charcoal">Color</span>
+                <div className="flex flex-wrap gap-2">
+                  {COLORS.map(color => (
+                    <button
+                      key={color}
+                      onClick={() => setColors(colors.includes(color) ? colors.filter(c => c !== color) : [...colors, color])}
+                      className={`h-7 w-7 rounded-full border-2 transition-all ${
+                        colors.includes(color) ? 'border-gold ring-2 ring-gold/30' : 'border-cream hover:border-sand'
+                      }`}
+                      title={color}
+                      style={{
+                        backgroundColor: { Gold: '#D4AF37', Silver: '#C0C0C0', 'Rose Gold': '#B76E79', Black: '#1a1a1a', White: '#FAF9F6', Red: '#C41E3A', Green: '#2D6A4F', Blue: '#1E3A5F', Pink: '#FFB6C1' }[color],
+                      }}
+                    />
+                  ))}
+                </div>
+              </div>
+
+              <div className="py-4">
+                <button
+                  onClick={clearAll}
+                  className="w-full rounded-sm border border-charcoal py-2.5 font-sans text-xs font-semibold tracking-wider text-charcoal transition-colors hover:bg-charcoal hover:text-ivory"
+                >
+                  CLEAR ALL FILTERS
+                </button>
+              </div>
             </motion.div>
           </>
         )}

@@ -16,7 +16,7 @@ export function WishlistPage() {
 
   return (
     <div className="min-h-screen bg-ivory">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-12">
         <div className="mb-8 flex flex-col items-center justify-between gap-4 sm:flex-row">
           <h1 className="font-serif text-4xl font-semibold tracking-wide text-charcoal">MY WISHLIST</h1>
           {items.length > 0 && (

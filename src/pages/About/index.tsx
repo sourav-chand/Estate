@@ -57,7 +57,7 @@ export function AboutPage() {
         </div>
       </div>
 
-      <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
+      <section className="max-w-7xl mx-auto px-6 lg:px-10 py-20">
         <AnimatedSection className="mx-auto max-w-3xl text-center">
           <h2 className="mb-6 font-serif text-3xl font-semibold text-charcoal">A Legacy of Elegance</h2>
           <p className="font-sans text-base leading-relaxed text-charcoal-muted">
@@ -70,7 +70,7 @@ export function AboutPage() {
       </section>
 
       <section className="bg-cream">
-        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 py-20">
           <AnimatedSection className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
             <div>
               <h2 className="mb-6 font-serif text-3xl font-semibold text-charcoal">Our Craft</h2>
@@ -101,7 +101,7 @@ export function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
+      <section className="max-w-7xl mx-auto px-6 lg:px-10 py-20">
         <AnimatedSection className="mb-12 text-center">
           <h2 className="mb-4 font-serif text-3xl font-semibold text-charcoal">Our Values</h2>
           <p className="mx-auto max-w-xl font-sans text-charcoal-muted">
@@ -123,7 +123,7 @@ export function AboutPage() {
       </section>
 
       <section className="bg-charcoal">
-        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 py-20">
           <AnimatedSection className="mb-12 text-center">
             <h2 className="mb-4 font-serif text-3xl font-semibold text-ivory">Our Journey</h2>
             <p className="mx-auto max-w-xl font-sans text-ivory/60">
@@ -153,7 +153,7 @@ export function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
+      <section className="max-w-7xl mx-auto px-6 lg:px-10 py-20">
         <AnimatedSection className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
           <div className="order-2 md:order-1">
             <img

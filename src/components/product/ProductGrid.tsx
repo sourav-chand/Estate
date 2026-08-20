@@ -23,10 +23,18 @@ const itemVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: 'easeOut' } },
 };
 
+const columnClasses: Record<number, string> = {
+  2: 'lg:grid-cols-2',
+  3: 'lg:grid-cols-3',
+  4: 'lg:grid-cols-4',
+};
+
 export function ProductGrid({ products, loading = false, columns = 4 }: ProductGridProps) {
+  const colClass = columnClasses[columns] ?? 'lg:grid-cols-4';
+
   if (loading) {
     return (
-      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 lg:grid-cols-4">
+      <div className={`grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 ${colClass}`}>
         {Array.from({ length: 8 }).map((_, i) => (
           <ProductSkeleton key={i} />
         ))}
@@ -51,7 +59,7 @@ export function ProductGrid({ products, loading = false, columns = 4 }: ProductG
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className={`grid grid-cols-2 gap-4 sm:gap-6 sm:grid-cols-3 lg:grid-cols-${columns}`}
+      className={`grid grid-cols-2 gap-4 sm:gap-6 sm:grid-cols-3 ${colClass}`}
     >
       {products.map((product) => (
         <motion.div key={product.id} variants={itemVariants}>

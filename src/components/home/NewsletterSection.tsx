@@ -10,20 +10,30 @@ export function NewsletterSection() {
   };
 
   return (
-    <section className="bg-champagne">
+    <section className="bg-champagne/50">
       <motion.div
         initial={{ opacity: 0, y: 32 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-60px' }}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="max-w-[1400px] mx-auto py-20 md:py-28 px-4 md:px-8 lg:px-16 text-center"
+        className="max-w-7xl mx-auto py-20 md:py-28 px-6 lg:px-10 text-center"
       >
-        <h2 className="font-serif text-3xl md:text-5xl text-charcoal tracking-wide leading-tight mb-4">
+        {/* Decorative element */}
+        <div className="mb-6">
+          <svg width="12" height="12" viewBox="0 0 12 12" className="text-gold mx-auto">
+            <path d="M6 0L12 6L6 12L0 6Z" fill="currentColor" />
+          </svg>
+        </div>
+
+        <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-charcoal tracking-wide leading-tight mb-4">
           A LITTLE SPARKLE,{' '}
           <br className="hidden sm:block" />
           IN YOUR INBOX.
         </h2>
-        <p className="text-charcoal-muted max-w-md mx-auto mb-10">
+
+        <div className="w-10 h-px bg-gold mx-auto my-5" />
+
+        <p className="text-charcoal-muted max-w-md mx-auto mb-10 font-sans text-sm md:text-base">
           Get first access to new collections, exclusive offers and styling
           inspiration.
         </p>
@@ -40,17 +50,17 @@ export function NewsletterSection() {
         ) : (
           <form
             onSubmit={handleSubmit}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-lg mx-auto"
+            className="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-lg mx-auto"
           >
             <input
               type="email"
               required
               placeholder="Your email address"
-              className="w-full sm:flex-1 bg-transparent border-b-2 border-charcoal py-4 px-1 text-charcoal placeholder:text-charcoal-muted/60 font-sans text-base outline-none focus:border-gold transition-colors duration-300"
+              className="w-full sm:flex-1 bg-transparent border-b-2 border-sand py-3.5 px-1 text-charcoal placeholder:text-charcoal-muted/50 font-sans text-sm outline-none focus:border-gold transition-colors duration-300"
             />
             <button
               type="submit"
-              className="w-full sm:w-auto bg-charcoal text-ivory px-8 py-4 uppercase tracking-widest text-sm font-sans font-medium hover:bg-gold transition-colors duration-300"
+              className="w-full sm:w-auto bg-charcoal text-ivory px-8 py-3.5 uppercase tracking-[0.15em] text-xs font-sans font-semibold hover:bg-gold transition-colors duration-300"
             >
               JOIN US
             </button>
