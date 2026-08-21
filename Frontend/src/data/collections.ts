@@ -2,7 +2,7 @@ import type { Collection } from '../types';
 
 export const collections: Collection[] = [
   {
-    id: 'col1',
+    id: 1,
     name: 'Rose Gold',
     slug: 'rose-gold',
     description: 'Elegant rose gold plated jewellery that adds warmth and femininity to every look. From delicate chains to bold statement pieces.',
@@ -11,7 +11,7 @@ export const collections: Collection[] = [
     productCount: 7,
   },
   {
-    id: 'col2',
+    id: 2,
     name: 'Crystal Blooms',
     slug: 'crystal-blooms',
     description: 'Sparkling crystal and CZ jewellery inspired by nature\'s most beautiful blooms. Each piece is designed to catch the light.',
@@ -20,7 +20,7 @@ export const collections: Collection[] = [
     productCount: 8,
   },
   {
-    id: 'col3',
+    id: 3,
     name: 'Hasli Collection',
     slug: 'hasli-collection',
     description: 'Contemporary everyday jewellery designed for the modern Indian woman. Minimalist designs that blend tradition with trend.',
@@ -29,7 +29,7 @@ export const collections: Collection[] = [
     productCount: 10,
   },
   {
-    id: 'col4',
+    id: 4,
     name: 'Wedding Season',
     slug: 'wedding-season',
     description: 'Grand bridal and wedding jewellery that makes every ceremony unforgettable. From kundan sets to polki chokers.',
@@ -38,7 +38,7 @@ export const collections: Collection[] = [
     productCount: 9,
   },
   {
-    id: 'col5',
+    id: 5,
     name: 'Everyday Elegance',
     slug: 'everyday-elegance',
     description: 'Subtle yet stunning jewellery for daily wear. Lightweight, durable designs that complement your everyday style.',
@@ -47,7 +47,7 @@ export const collections: Collection[] = [
     productCount: 10,
   },
   {
-    id: 'col6',
+    id: 6,
     name: 'Morbagh Collection',
     slug: 'morbagh-collection',
     description: 'Inspired by the vibrant hues of Indian gardens. Handcrafted oxidized and meenakari jewellery bursting with colour.',
