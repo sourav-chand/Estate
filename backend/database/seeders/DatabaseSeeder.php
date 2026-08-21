@@ -14,6 +14,12 @@ class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
+        // Docker runs the seeder at startup. Do not duplicate the catalog when
+        // an existing database volume is restarted.
+        if (User::where('email', 'admin@estele.co')->exists()) {
+            return;
+        }
+
         // Create admin user
         User::create([
             'name' => 'Admin',

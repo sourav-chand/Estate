@@ -16,8 +16,14 @@ class Product extends Model
     ];
 
     protected $casts = [
-        'price' => 'decimal:2',
-        'compare_at_price' => 'decimal:2',
+        // The storefront consumes these through JSON and performs JavaScript
+        // calculations on them, so expose numbers rather than decimal strings.
+        'price' => 'float',
+        'compare_at_price' => 'float',
+        'weight' => 'float',
+        'rating' => 'float',
+        'stock' => 'integer',
+        'review_count' => 'integer',
         'images' => 'array',
         'tags' => 'array',
         'is_new' => 'boolean',

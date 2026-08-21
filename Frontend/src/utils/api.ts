@@ -1,4 +1,6 @@
-const API_BASE = 'http://localhost:8000/api';
+// This can be changed at build time for a deployed frontend while retaining a
+// convenient local default for Docker Compose and non-container development.
+const API_BASE = import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:8000/api';
 
 export async function apiRequest(endpoint: string, options: RequestInit = {}) {
   const token = localStorage.getItem('auth_token');

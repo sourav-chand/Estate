@@ -13,8 +13,8 @@ class OrderItem extends Model
     ];
 
     protected $casts = [
-        'price' => 'decimal:2',
-        'total' => 'decimal:2',
+        'price' => 'float',
+        'total' => 'float',
     ];
 
     public function order(): BelongsTo
