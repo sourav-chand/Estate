@@ -1,13 +1,7 @@
 import type { Category } from '../types';
 
 export const categories: Category[] = [
-  {
-    id: 1,
-    name: 'Necklaces',
-    slug: 'necklaces',
-    image: 'https://images.unsplash.com/photo-1515562141589-67f0d727b750?w=800&h=600&fit=crop',
-    productCount: 8,
-  },
+
   {
     id: 2,
     name: 'Earrings',
