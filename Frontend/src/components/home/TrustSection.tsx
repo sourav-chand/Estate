@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import { Shield, RotateCcw, Truck, Gem, Award } from 'lucide-react';
 
 const trustItems = [
@@ -9,14 +9,14 @@ const trustItems = [
   { icon: Award, label: '1-Year Warranty' },
 ];
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: {},
   visible: {
     transition: { staggerChildren: 0.08 },
   },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 16 },
   visible: {
     opacity: 1,

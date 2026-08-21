@@ -1,11 +1,11 @@
 import { useCallback } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { X } from 'lucide-react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, motion, type Variants } from 'framer-motion';
 import { useUI } from '../../context';
 import { NAV_LINKS, SITE_NAME, SOCIAL_LINKS } from '../../utils/constants';
 
-const menuVariants = {
+const menuVariants: Variants = {
   hidden: { x: '100%' },
   visible: {
     x: 0,
@@ -17,7 +17,7 @@ const menuVariants = {
   },
 };
 
-const linkVariants = {
+const linkVariants: Variants = {
   hidden: { opacity: 0, x: 24 },
   visible: (i: number) => ({
     opacity: 1,

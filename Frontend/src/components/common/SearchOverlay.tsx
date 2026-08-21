@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { X, Search as SearchIcon } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useSearch } from '../../context';
