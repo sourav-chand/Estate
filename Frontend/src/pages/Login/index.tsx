@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { login as apiLogin } from '../../utils/api';
+import { login as apiLogin, getStoredUser } from '../../utils/api';
 
 export function LoginPage() {
   const navigate = useNavigate();
@@ -16,7 +16,8 @@ export function LoginPage() {
     setLoading(true);
     try {
       await apiLogin(email, password);
-      navigate('/');
+      const user = getStoredUser();
+      navigate(user?.is_admin ? '/admin' : '/');
       window.location.reload();
     } catch (err: any) {
       setError(err.message || 'Invalid credentials');
