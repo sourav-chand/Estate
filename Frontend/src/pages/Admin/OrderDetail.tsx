@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, CheckCircle, XCircle, Truck, Package, Clock } from 'lucide-react';
+import { ArrowLeft, CheckCircle, XCircle } from 'lucide-react';
 import { adminApi, type AdminOrder } from '../../services/adminApi';
 import { formatPrice } from '../../utils/format';
 

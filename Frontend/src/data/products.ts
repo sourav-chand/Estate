@@ -2,7 +2,7 @@ import type { Product } from '../types';
 
 export const products: Product[] = [
   {
-    id: 'p1',
+    id: 1,
     name: 'Chandbali Pearl Drop Earrings',
     slug: 'chandbali-pearl-drop-earrings',
     category: 'Earrings',
@@ -26,7 +26,7 @@ export const products: Product[] = [
     stock: 45,
   },
   {
-    id: 'p2',
+    id: 2,
     name: 'Rose Gold CZ Necklace Set',
     slug: 'rose-gold-cz-necklace-set',
     category: 'Jewellery Sets',
@@ -51,7 +51,7 @@ export const products: Product[] = [
     stock: 30,
   },
   {
-    id: 'p3',
+    id: 3,
     name: 'Temple Gold Jhumka Earrings',
     slug: 'temple-gold-jhumka-earrings',
     category: 'Earrings',
@@ -75,7 +75,7 @@ export const products: Product[] = [
     stock: 67,
   },
   {
-    id: 'p4',
+    id: 4,
     name: 'Kundan Bridal Necklace Set',
     slug: 'kundan-bridal-necklace-set',
     category: 'Necklaces',
@@ -99,7 +99,7 @@ export const products: Product[] = [
     stock: 15,
   },
   {
-    id: 'p5',
+    id: 5,
     name: 'Diamond Tennis Bracelet',
     slug: 'diamond-tennis-bracelet',
     category: 'Bracelets',
@@ -124,7 +124,7 @@ export const products: Product[] = [
     stock: 25,
   },
   {
-    id: 'p6',
+    id: 6,
     name: 'CZ Floral Gold Ring',
     slug: 'cz-floral-gold-ring',
     category: 'Rings',
@@ -149,7 +149,7 @@ export const products: Product[] = [
     stock: 89,
   },
   {
-    id: 'p7',
+    id: 7,
     name: 'Gold Plated Mangalsutra',
     slug: 'gold-plated-mangalsutra',
     category: 'Mangalsutra',
@@ -173,7 +173,7 @@ export const products: Product[] = [
     stock: 112,
   },
   {
-    id: 'p8',
+    id: 8,
     name: 'Silver Oxidized Jhumka',
     slug: 'silver-oxidized-jhumka',
     category: 'Earrings',
@@ -197,7 +197,7 @@ export const products: Product[] = [
     stock: 134,
   },
   {
-    id: 'p9',
+    id: 9,
     name: 'Polki Choker Necklace',
     slug: 'polki-choker-necklace',
     category: 'Necklaces',
@@ -221,7 +221,7 @@ export const products: Product[] = [
     stock: 20,
   },
   {
-    id: 'p10',
+    id: 10,
     name: 'Pearl String Necklace Set',
     slug: 'pearl-string-necklace-set',
     category: 'Jewellery Sets',
@@ -245,7 +245,7 @@ export const products: Product[] = [
     stock: 42,
   },
   {
-    id: 'p11',
+    id: 11,
     name: 'Peacock Jadau Earrings',
     slug: 'peacock-jadau-earrings',
     category: 'Earrings',
@@ -269,7 +269,7 @@ export const products: Product[] = [
     stock: 28,
   },
   {
-    id: 'p12',
+    id: 12,
     name: 'Cubic Zirconia Tennis Bracelet',
     slug: 'cubic-zirconia-tennis-bracelet',
     category: 'Bracelets',
@@ -294,7 +294,7 @@ export const products: Product[] = [
     stock: 56,
   },
   {
-    id: 'p13',
+    id: 13,
     name: 'Hammered Gold Bangle Set',
     slug: 'hammered-gold-bangle-set',
     category: 'Bangles',
@@ -319,7 +319,7 @@ export const products: Product[] = [
     stock: 63,
   },
   {
-    id: 'p14',
+    id: 14,
     name: 'Meenakari Drop Pendant',
     slug: 'meenakari-drop-pendant',
     category: 'Pendants',
@@ -343,7 +343,7 @@ export const products: Product[] = [
     stock: 78,
   },
   {
-    id: 'p15',
+    id: 15,
     name: 'Diamond Solitaire Ring',
     slug: 'diamond-solitaire-ring',
     category: 'Rings',
@@ -368,7 +368,7 @@ export const products: Product[] = [
     stock: 18,
   },
   {
-    id: 'p16',
+    id: 16,
     name: 'Gold Plated Payal Anklet',
     slug: 'gold-plated-payal-anklet',
     category: 'Bracelets',
@@ -393,7 +393,7 @@ export const products: Product[] = [
     stock: 156,
   },
   {
-    id: 'p17',
+    id: 17,
     name: 'Bridal Polki Choker Set',
     slug: 'bridal-polki-choker-set',
     category: 'Jewellery Sets',
@@ -417,7 +417,7 @@ export const products: Product[] = [
     stock: 12,
   },
   {
-    id: 'p18',
+    id: 18,
     name: 'CZ Butterfly Earrings',
     slug: 'cz-butterfly-earrings',
     category: 'Earrings',
@@ -441,7 +441,7 @@ export const products: Product[] = [
     stock: 92,
   },
   {
-    id: 'p19',
+    id: 19,
     name: 'Kundan Matha Patti',
     slug: 'kundan-matha-patti',
     category: 'Pendants',
@@ -465,7 +465,7 @@ export const products: Product[] = [
     stock: 22,
   },
   {
-    id: 'p20',
+    id: 20,
     name: 'Rose Gold Infinity Bracelet',
     slug: 'rose-gold-infinity-bracelet',
     category: 'Bracelets',
@@ -490,7 +490,7 @@ export const products: Product[] = [
     stock: 74,
   },
   {
-    id: 'p21',
+    id: 21,
     name: 'Antique Gold Choker',
     slug: 'antique-gold-choker',
     category: 'Necklaces',
@@ -514,7 +514,7 @@ export const products: Product[] = [
     stock: 31,
   },
   {
-    id: 'p22',
+    id: 22,
     name: 'Crystal Drop Earrings',
     slug: 'crystal-drop-earrings',
     category: 'Earrings',
@@ -538,7 +538,7 @@ export const products: Product[] = [
     stock: 68,
   },
   {
-    id: 'p23',
+    id: 23,
     name: 'Kada Bangle Set',
     slug: 'kada-bangle-set',
     category: 'Bangles',
@@ -563,7 +563,7 @@ export const products: Product[] = [
     stock: 85,
   },
   {
-    id: 'p24',
+    id: 24,
     name: 'Pearl & CZ Jhumka Set',
     slug: 'pearl-cz-jhumka-set',
     category: 'Jewellery Sets',
@@ -587,7 +587,7 @@ export const products: Product[] = [
     stock: 45,
   },
   {
-    id: 'p25',
+    id: 25,
     name: 'Twisted Rope Chain Ring',
     slug: 'twisted-rope-chain-ring',
     category: 'Rings',
@@ -612,7 +612,7 @@ export const products: Product[] = [
     stock: 103,
   },
   {
-    id: 'p26',
+    id: 26,
     name: 'Filigree Gold Nose Pin',
     slug: 'filigree-gold-nose-pin',
     category: 'Pendants',
@@ -636,7 +636,7 @@ export const products: Product[] = [
     stock: 201,
   },
   {
-    id: 'p27',
+    id: 27,
     name: 'Layered Chain Necklace',
     slug: 'layered-chain-necklace',
     category: 'Necklaces',
@@ -660,7 +660,7 @@ export const products: Product[] = [
     stock: 52,
   },
   {
-    id: 'p28',
+    id: 28,
     name: 'Bridal Waist Belt Kamarband',
     slug: 'bridal-waist-belt-kamarband',
     category: 'Bracelets',
@@ -685,7 +685,7 @@ export const products: Product[] = [
     stock: 18,
   },
   {
-    id: 'p29',
+    id: 29,
     name: 'Oxidized Silver Choker',
     slug: 'oxidized-silver-choker',
     category: 'Necklaces',
@@ -709,7 +709,7 @@ export const products: Product[] = [
     stock: 88,
   },
   {
-    id: 'p30',
+    id: 30,
     name: 'Mango Mala Necklace',
     slug: 'mango-mala-necklace',
     category: 'Necklaces',
@@ -733,7 +733,7 @@ export const products: Product[] = [
     stock: 33,
   },
   {
-    id: 'p31',
+    id: 31,
     name: 'Beaded Charm Bracelet',
     slug: 'beaded-charm-bracelet',
     category: 'Bracelets',
@@ -758,7 +758,7 @@ export const products: Product[] = [
     stock: 189,
   },
   {
-    id: 'p32',
+    id: 32,
     name: 'Temple Lakshmi Earrings',
     slug: 'temple-lakshmi-earrings',
     category: 'Earrings',
@@ -782,7 +782,7 @@ export const products: Product[] = [
     stock: 29,
   },
   {
-    id: 'p33',
+    id: 33,
     name: 'Diamond Wave Ring',
     slug: 'diamond-wave-ring',
     category: 'Rings',
@@ -807,7 +807,7 @@ export const products: Product[] = [
     stock: 47,
   },
   {
-    id: 'p34',
+    id: 34,
     name: 'Gold Tassel Jhumka',
     slug: 'gold-tassel-jhumka',
     category: 'Earrings',
@@ -831,7 +831,7 @@ export const products: Product[] = [
     stock: 76,
   },
   {
-    id: 'p35',
+    id: 35,
     name: 'Silk Thread Bangle Set',
     slug: 'silk-thread-bangle-set',
     category: 'Bangles',
@@ -856,7 +856,7 @@ export const products: Product[] = [
     stock: 234,
   },
   {
-    id: 'p36',
+    id: 36,
     name: 'CZ Heart Pendant Necklace',
     slug: 'cz-heart-pendant-necklace',
     category: 'Pendants',
@@ -880,7 +880,7 @@ export const products: Product[] = [
     stock: 87,
   },
   {
-    id: 'p37',
+    id: 37,
     name: 'Statement Cocktail Ring',
     slug: 'statement-cocktail-ring',
     category: 'Rings',
@@ -905,7 +905,7 @@ export const products: Product[] = [
     stock: 35,
   },
   {
-    id: 'p38',
+    id: 38,
     name: 'Pearl Choker Necklace',
     slug: 'pearl-choker-necklace',
     category: 'Necklaces',
@@ -929,7 +929,7 @@ export const products: Product[] = [
     stock: 49,
   },
   {
-    id: 'p39',
+    id: 39,
     name: 'Leaf Motif Gold Earrings',
     slug: 'leaf-motif-gold-earrings',
     category: 'Earrings',
@@ -953,7 +953,7 @@ export const products: Product[] = [
     stock: 122,
   },
   {
-    id: 'p40',
+    id: 40,
     name: 'Kundan Bridal Tikka',
     slug: 'kundan-bridal-tikka',
     category: 'Pendants',
@@ -977,7 +977,7 @@ export const products: Product[] = [
     stock: 24,
   },
   {
-    id: 'p41',
+    id: 41,
     name: 'Snake Chain Gold Bracelet',
     slug: 'snake-chain-gold-bracelet',
     category: 'Bracelets',
@@ -1002,7 +1002,7 @@ export const products: Product[] = [
     stock: 64,
   },
   {
-    id: 'p42',
+    id: 42,
     name: 'Jhumka Earring & Ring Set',
     slug: 'jhumka-earring-ring-set',
     category: 'Jewellery Sets',
@@ -1027,7 +1027,7 @@ export const products: Product[] = [
     stock: 58,
   },
   {
-    id: 'p43',
+    id: 43,
     name: 'Rose Gold Hoop Earrings',
     slug: 'rose-gold-hoop-earrings',
     category: 'Earrings',
@@ -1052,7 +1052,7 @@ export const products: Product[] = [
     stock: 95,
   },
   {
-    id: 'p44',
+    id: 44,
     name: 'Meenakari Broad Bangle',
     slug: 'meenakari-broad-bangle',
     category: 'Bangles',
@@ -1077,7 +1077,7 @@ export const products: Product[] = [
     stock: 41,
   },
   {
-    id: 'p45',
+    id: 45,
     name: 'CZ Cluster Earrings',
     slug: 'cz-cluster-earrings',
     category: 'Earrings',

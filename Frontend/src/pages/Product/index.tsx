@@ -9,7 +9,6 @@ import {
   Truck,
   RefreshCw,
   Shield,
-  Star,
 } from 'lucide-react';
 import { productService } from '../../services/productService';
 import { useCart } from '../../context/CartContext';

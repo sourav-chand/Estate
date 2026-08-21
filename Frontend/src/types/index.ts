@@ -22,7 +22,7 @@ export interface Product {
 }
 
 export interface Category {
-  id: string;
+  id: number;
   name: string;
   slug: string;
   image: string;
@@ -30,7 +30,7 @@ export interface Category {
 }
 
 export interface Collection {
-  id: string;
+  id: number;
   name: string;
   slug: string;
   description: string;

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Search, ChevronRight, Eye } from 'lucide-react';
+import { Search, Eye } from 'lucide-react';
 import { adminApi, type AdminOrder, type PaginatedResponse } from '../../services/adminApi';
 import { formatPrice } from '../../utils/format';
 

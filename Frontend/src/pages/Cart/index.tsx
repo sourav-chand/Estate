@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Minus, Plus, Trash2, ShoppingBag, Tag, X, MapPin, CreditCard, CheckCircle, Loader2 } from 'lucide-react';
@@ -6,7 +6,7 @@ import { useCart } from '../../context/CartContext';
 import { formatPrice } from '../../utils/format';
 import { FREE_SHIPPING_THRESHOLD } from '../../utils/constants';
 
-const API_BASE = 'http://localhost:8000/api';
+const API_BASE = 'https://estate-jw6y.onrender.com/api';
 
 interface Address {
   id: number;
@@ -404,7 +404,7 @@ export function CartPage() {
                     Address
                   </div>
                   <div className="flex-1 h-px bg-cream" />
-                  <div className={`flex items-center gap-1.5 text-xs font-medium ${step === 'payment' ? 'text-gold' : step === 'confirmation' ? 'text-green-600' : 'text-charcoal-muted'}`}>
+                  <div className={`flex items-center gap-1.5 text-xs font-medium ${step === 'payment' ? 'text-gold' : 'text-charcoal-muted'}`}>
                     <CreditCard size={14} />
                     Payment
                   </div>
