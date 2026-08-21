@@ -5,8 +5,7 @@ import { Minus, Plus, Trash2, ShoppingBag, Tag, X, MapPin, CreditCard, CheckCirc
 import { useCart } from '../../context/CartContext';
 import { formatPrice } from '../../utils/format';
 import { FREE_SHIPPING_THRESHOLD } from '../../utils/constants';
-
-const API_BASE = 'https://estate-jw6y.onrender.com/api';
+import { API_BASE } from '../../utils/api';
 
 interface Address {
   id: number;

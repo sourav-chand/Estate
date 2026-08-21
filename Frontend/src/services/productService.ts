@@ -1,6 +1,5 @@
 import type { Product } from '../types';
-
-const API_BASE = 'http://localhost:8000/api';
+import { API_BASE } from '../utils/api';
 
 interface ApiProduct {
   id: number;

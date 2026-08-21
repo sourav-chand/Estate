@@ -97,7 +97,7 @@
     </div>
 
     <script>
-        const API_BASE = 'http://localhost:8000/api';
+        const API_BASE = '/api';
         let authToken = localStorage.getItem('admin_token');
         let currentPage = 'dashboard';
 

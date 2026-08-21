@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:8000/api';
+import { API_BASE } from '../utils/api';
 
 async function adminFetch<T>(endpoint: string, options: RequestInit = {}): Promise<T> {
   const token = localStorage.getItem('auth_token');
