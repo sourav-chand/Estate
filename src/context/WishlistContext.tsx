@@ -7,7 +7,7 @@ interface WishlistState {
 
 type WishlistAction =
   | { type: 'ADD_ITEM'; product: Product }
-  | { type: 'REMOVE_ITEM'; productId: string }
+  | { type: 'REMOVE_ITEM'; productId: number }
   | { type: 'TOGGLE_ITEM'; product: Product }
   | { type: 'CLEAR_WISHLIST' }
   | { type: 'LOAD_WISHLIST'; items: Product[] };
@@ -51,9 +51,9 @@ function loadWishlistFromStorage(): Product[] {
 interface WishlistContextValue {
   items: Product[];
   addItem: (product: Product) => void;
-  removeItem: (productId: string) => void;
+  removeItem: (productId: number) => void;
   toggleItem: (product: Product) => void;
-  isInWishlist: (productId: string) => boolean;
+  isInWishlist: (productId: number) => boolean;
   clearWishlist: () => void;
   count: number;
 }
@@ -76,7 +76,7 @@ export function WishlistProvider({ children }: { children: ReactNode }) {
     dispatch({ type: 'ADD_ITEM', product });
   }, []);
 
-  const removeItem = useCallback((productId: string) => {
+  const removeItem = useCallback((productId: number) => {
     dispatch({ type: 'REMOVE_ITEM', productId });
   }, []);
 
@@ -89,7 +89,7 @@ export function WishlistProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const isInWishlist = useCallback(
-    (productId: string) => state.items.some((i) => i.id === productId),
+    (productId: number) => state.items.some((i) => i.id === productId),
     [state.items]
   );
 

@@ -8,6 +8,7 @@ import { WishlistPage } from '../pages/Wishlist';
 import { CartPage } from '../pages/Cart';
 import { AboutPage } from '../pages/About';
 import { NotFoundPage } from '../pages/NotFound';
+import { LoginPage } from '../pages/Login';
 
 export const router = createBrowserRouter([
   {
@@ -21,6 +22,7 @@ export const router = createBrowserRouter([
       { path: 'wishlist', element: <WishlistPage /> },
       { path: 'cart', element: <CartPage /> },
       { path: 'about', element: <AboutPage /> },
+      { path: 'login', element: <LoginPage /> },
       { path: '*', element: <NotFoundPage /> },
     ],
   },

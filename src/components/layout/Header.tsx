@@ -1,8 +1,9 @@
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { Search, Heart, ShoppingBag, User, Menu } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useUI, useCart, useWishlist, useSearch } from '../../context';
 import { NAV_LINKS, SITE_NAME } from '../../utils/constants';
+import { isAuthenticated, getStoredUser, logout } from '../../utils/api';
 
 function Badge({ count }: { count: number }) {
   if (count <= 0) return null;
@@ -18,6 +19,9 @@ export function Header() {
   const { itemCount, openCart } = useCart();
   const { count: wishlistCount } = useWishlist();
   const { openSearch } = useSearch();
+  const navigate = useNavigate();
+  const loggedIn = isAuthenticated();
+  const user = getStoredUser();
 
   const navLinkClass = ({ isActive }: { isActive: boolean }) =>
     `relative text-[13px] tracking-[0.12em] uppercase transition-colors duration-300 font-medium ${
@@ -85,13 +89,25 @@ export function Header() {
             <Badge count={wishlistCount} />
           </Link>
 
-          <Link
-            to="/account"
-            className="hidden lg:flex items-center justify-center w-10 h-10"
-            aria-label="Account"
-          >
-            <User className="w-[18px] h-[18px] text-charcoal-light" strokeWidth={1.5} />
-          </Link>
+          {loggedIn ? (
+            <div className="hidden lg:flex items-center gap-2">
+              <span className="text-xs text-charcoal-muted font-sans">{user?.name}</span>
+              <button
+                onClick={() => { logout(); navigate('/'); window.location.reload(); }}
+                className="text-xs text-gold font-sans hover:text-gold-dark transition-colors"
+              >
+                Logout
+              </button>
+            </div>
+          ) : (
+            <Link
+              to="/login"
+              className="hidden lg:flex items-center justify-center w-10 h-10"
+              aria-label="Account"
+            >
+              <User className="w-[18px] h-[18px] text-charcoal-light" strokeWidth={1.5} />
+            </Link>
+          )}
 
           <button
             onClick={openCart}
