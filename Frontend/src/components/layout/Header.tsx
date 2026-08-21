@@ -90,7 +90,12 @@ export function Header() {
           </Link>
 
           {loggedIn ? (
-            <div className="hidden lg:flex items-center gap-2">
+            <div className="hidden lg:flex items-center gap-3">
+              {user?.is_admin && (
+                <Link to="/admin" className="text-xs font-medium text-gold hover:text-gold-dark transition-colors border border-gold rounded px-2 py-1">
+                  Admin
+                </Link>
+              )}
               <span className="text-xs text-charcoal-muted font-sans">{user?.name}</span>
               <button
                 onClick={() => { logout(); navigate('/'); window.location.reload(); }}
