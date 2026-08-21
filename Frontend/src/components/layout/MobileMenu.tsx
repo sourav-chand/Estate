@@ -22,7 +22,7 @@ const linkVariants = {
   visible: (i: number) => ({
     opacity: 1,
     x: 0,
-    transition: { delay: 0.12 + i * 0.06, duration: 0.4, ease: 'easeOut' },
+    transition: { delay: 0.12 + i * 0.06, duration: 0.4, ease: 'easeOut' as const },
   }),
 };
 
